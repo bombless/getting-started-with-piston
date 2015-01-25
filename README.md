@@ -42,8 +42,8 @@ Luckily for you crazy kids, C has a stable ABI, so you can simply plug in the bi
 
 Copy the \*.a files in the `$TUTORIAL_ROOT/windows_clibs/$CPU_ARCH` folder to `$RUST_ROOT\bin\rustlib\$CPU_ARCH-pc-windows-gnu\lib`, which is most likely one of the following:
 
-`C:\Rust\bin\rustlib\x86_64-pc-windows-gnu\lib`
-`C:\Rust\bin\rustlib\i686-pc-windows-gnu\lib`
+    C:\Rust\bin\rustlib\x86_64-pc-windows-gnu\lib
+    C:\Rust\bin\rustlib\i686-pc-windows-gnu\lib
 
 Copy the \*.dll files in `$TUTORIAL_ROOT/windows_clibs/$CPU_ARCH` to `$TUTORIAL_ROOT/sample_project`.
 
