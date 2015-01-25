@@ -4,7 +4,7 @@ So you want to make a kick-ass game, right? You want said game to work on Window
 
 [![All the platforms!](images/all_the_platforms.jpg)]()
 
-The first step to game development is not a kick-ass idea, though. The first step is actually much more exciting: picking your *tools*, and *learning them well*. By choosing this tutorial, you have chosen Rust as your language and Piston as your game engine, and those are some mighty fine choices! Rust is easily installed in minutes with a one-liner on Windows, Mac, and Linux, and this tutorial will show you that Piston is quick and easy to set up. Let's get started.
+The first step to game development is not a kick-ass idea, though. The first step is actually much more exciting: picking your *tools*, and *learning them well*. By choosing this tutorial, you have chosen Rust as your language, Piston as your game engine, and those are some mighty fine choices! Rust is easily installed in minutes with a one-liner on Windows, Mac, and Linux, and this tutorial will show you that Piston is quick and easy to set up. Let's get started.
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ Unfortunately, Windows is the toughest platform to develop on. The Windows versi
 
 Luckily for you crazy kids, C has a stable ABI, so you can simply plug in the binaries I have produced!
 
-Copy the \*.a files in the `$TUTORIAL_ROOT/windows_clibs` folder to `$RUST_ROOT\bin\rustlib\x86_64-pc-windows-gnu\lib`, which is most likely `C:\Rust\bin\rustlib\x86_64-pc-windows-gnu\lib` on your machine.
+Copy the \*.a files in the `$TUTORIAL_ROOT/windows_clibs` folder to `$RUST_ROOT\bin\rustlib\$CPU_ARCH-pc-windows-gnu\lib`, which is most likely `C:\Rust\bin\rustlib\x86_64-pc-windows-gnu\lib` on your machine.
 
 Copy the \*.dll files in `$TUTORIAL_ROOT/windows_clibs` to `$TUTORIAL_ROOT/sample_project`.
 
