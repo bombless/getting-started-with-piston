@@ -63,20 +63,20 @@ Follow the guide to install SDL2 and FreeType from source below.
 
 If you are running Windows and/or already installed SDL2 and FreeType using one of the methods above, skip this section.
 
-Download these files and put them somewhere you'll be comfortable working with them:
+Download these somewhere you'll be comfortable working with them:
 
-- [SDL2](https://www.libsdl.org/release/SDL2-2.0.3.tar.gz "SDL2")
-- [FreeType](http://download.savannah.gnu.org/releases/freetype/freetype-2.5.5.tar.gz "FreeType")
+    curl https://www.libsdl.org/release/SDL2-2.0.3.tar.gz > SDL2-2.0.3.tar
+    curl http://download.savannah.gnu.org/releases/freetype/freetype-2.5.5.tar.gz > freetype-2.5.5.tar
 
-In a terminal, `cd` to the directory you downloaded SDL2 and FreeType to. Next, extract the files:
+Next, extract the files:
 
-    tar -xzvf SDL2-2.0.3.tar.gz; rm SDL2-2.0.3.tar.gz
-    tar -xzvf freetype-2.5.5.tar.gz; rm freetype-2.5.5.tar.gz
+    tar -xzvf SDL2-2.0.3.tar; rm SDL2-2.0.3.tar
+    tar -xzvf freetype-2.5.5.tar; rm freetype-2.5.5.tar
 
-Build and install SDL2:
+Build and install SDL2 and FreeType (you'll have to enter your password when it gets to the `sudo make install` step for each):
 
-    cd SDL2-2.0.3; ./configure; make; make install; cd ..
-    cd freetype-2.5.5; ./configure; make; make install; cd ..
+    cd SDL2-2.0.3; ./configure; make; sudo make install; cd ..
+    cd freetype-2.5.5; ./configure; make; sudo make install; cd ..
 
 Annnd you're done!
 
