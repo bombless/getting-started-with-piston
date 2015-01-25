@@ -10,9 +10,8 @@ The first step to game development is not a kick-ass idea, though. The first ste
 
 Here are the things you'll need to follow this tutorial:
 
-- A text editor
-- A working installation of `git`
 - A working internet connection
+- A working installation of `git`
 
 ## Installing Rust
 
