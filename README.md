@@ -65,13 +65,13 @@ If you are running Windows and/or already installed SDL2 and FreeType using one 
 
 Download these somewhere you'll be comfortable working with them:
 
-    curl https://www.libsdl.org/release/SDL2-2.0.3.tar.gz > SDL2-2.0.3.tar
-    curl http://download.savannah.gnu.org/releases/freetype/freetype-2.5.5.tar.gz > freetype-2.5.5.tar
+    curl https://www.libsdl.org/release/SDL2-2.0.3.tar.gz > SDL2-2.0.3.tar.gz
+    curl http://gnu.mirrors.pair.com/savannah/savannah//freetype/freetype-2.5.5.tar.gz > freetype-2.5.5.tar.gz
 
 Next, extract the files:
 
-    tar -xzvf SDL2-2.0.3.tar; rm SDL2-2.0.3.tar
-    tar -xzvf freetype-2.5.5.tar; rm freetype-2.5.5.tar
+    tar -xzvf SDL2-2.0.3.tar.gz; rm SDL2-2.0.3.tar.gz
+    tar -xzvf freetype-2.5.5.tar.gz; rm freetype-2.5.5.tar.gz
 
 Build and install SDL2 and FreeType (you'll have to enter your password when it gets to the `sudo make install` step for each):
 
