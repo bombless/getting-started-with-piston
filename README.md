@@ -91,7 +91,7 @@ If you've made it this far, congratulations! The hardest stuff is over, and we'r
 
 `cd` to the `$TUTORIAL_ROOT/sample_project` directory in `command prompt` if you are running Windows or `terminal` if you are running Linux or Mac OSX.
 
-Build the sample project:
+Build the sample project using `Cargo`, Rust's excellent package manager:
 
     cargo build
 
