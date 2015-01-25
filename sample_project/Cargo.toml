@@ -1,0 +1,16 @@
+[package]
+
+name = "piston_sample"
+version = "0.0.0"
+authors = [
+    "tedsta <tderego94@gmail.com>"
+]
+
+[[bin]]
+
+name = "piston_sample"
+path = "src/main.rs"
+
+[dependencies.piston]
+
+git = "https://github.com/pistondevelopers/piston"
