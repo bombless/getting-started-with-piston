@@ -30,7 +30,7 @@ Sounds easy, right? Great! It is.
 
 Clone this repository! Put it wherever you want, and make sure it's easy to get back to.
 
-    git clone https://github.com/tedsta/piston-cross-platform-tutorial.git
+    git clone https://github.com/tedsta/getting-started-with-piston.git
 
 That's all. From now on, `$TUTORIAL_ROOT` refers to cloned repository's location.
 
