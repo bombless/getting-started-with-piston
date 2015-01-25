@@ -57,15 +57,11 @@ If you can't get the libraries from your package manager, you can build them fro
 
 ### Installing SDL2 and FreeType on Mac OSX
 
-If you have [Homebrew](http://brew.sh/ "Homebrew") installed, SDL2 is easy.
-
-    brew install sdl2
-
-If you don't have Homebrew installed, don't worry about it. You can install the libraries from source below.
+Follow the guide to install SDL2 and FreeType from source below.
 
 ### Installing SDL2 and FreeType From Source
 
-If you already installed SDL2 and FreeType using one of the methods above, skip this section.
+If you are running Windows and/or already installed SDL2 and FreeType using one of the methods above, skip this section.
 
 Download these files and put them somewhere you'll be comfortable working with them:
 
