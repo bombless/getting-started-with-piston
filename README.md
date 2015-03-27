@@ -1,10 +1,10 @@
-# Writing Cross-Platform Games in Rust Using Piston
+# Getting Started with Rust and Piston
 
 So you want to make a kick-ass game, right? You want said game to work on Windows, Mac, and Linux, right!? Well, dear reader, you have come to the right place!
 
 [![All the platforms!](images/all_the_platforms.jpg)]()
 
-The first step to game development is not a kick-ass idea, though. The first step is actually much more exciting: picking your *tools*, and *learning them well*. By choosing this tutorial, you have chosen Rust as your language, Piston as your game engine, and those are some mighty fine choices! Rust is easily installed in minutes with a one-liner on Windows, Mac, and Linux, and this tutorial will show you that Piston is quick and easy to set up. Let's get started.
+The first step to game development is exciting: picking your tools, and learning them well. By choosing this tutorial, you have chosen Rust as your language, Piston as your game engine, and those are some mighty fine choices! Rust is easily installed in minutes with a one-liner on Windows, Mac, and Linux, and this tutorial will show you that Piston is quick and easy to set up. Let's get started.
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ Sounds easy, right? Great! It is.
 
 ### Set Up the Sample Project
 
-Clone this repository! Put it wherever you want, and make sure it's easy to get back to.
+Clone this repository. Put it wherever you want, and make sure it's easy to get back to.
 
     git clone https://github.com/tedsta/getting-started-with-piston.git
 
@@ -36,7 +36,7 @@ That's all. From now on, `$TUTORIAL_ROOT` refers to cloned repository's location
 
 ### Installing SDL2 and FreeType on Windows
 
-Unfortunately, Windows is the toughest platform to develop on. The Windows version of Rust comes bundled with a minimal MinGW inside. Because there are so many versions of MinGW (tdm vs sjlj, w32 vs w64), and because the compiler used to link the development libraries must match the compiler used to link your final application, producing the correct \*.a and \*.dll files is extremely frustrating on Windows.
+Unfortunately, Windows is the toughest platform to develop on. The Windows version of Rust comes bundled with a minimal MinGW inside. Because there are so many versions of MinGW (tdm vs sjlj, w32 vs w64), and because the compiler used to link the development libraries must match the compiler used to link your final application, producing the correct \*.a and \*.dll files is trickier. The stock versions of MinGW won't cut it, you'll have to go to the MinGW sourceforge page and find the correct version for your system.
 
 Luckily for you crazy kids, C has a stable ABI, so you can simply plug in the binaries I have produced!
 
@@ -85,11 +85,11 @@ Annnd you're done!
 
 ## Running the Sample Project
 
-If you've made it this far, congratulations! The hardest stuff is over, and we're finally going to build some code and watch it run.
+The hardest stuff is over, and we're finally going to build some code and watch it run.
 
 `cd` to the `$TUTORIAL_ROOT/sample_project` directory in `command prompt` if you are running Windows or `terminal` if you are running Linux or Mac OSX.
 
-Build the sample project using `Cargo`, Rust's excellent package manager:
+Build the sample project using `Cargo`, Rust's package manager:
 
     cargo build
 
@@ -103,7 +103,7 @@ You should get a screen that looks like this:
 
 ## Continuing the Game Development Quest
 
-Congratulations! You're all set up with Rust and Piston! Hopefully there will be more time to create more tutorials, but for now you'll have to continue your journey elsewhere:
+Congratulations! You're all set up with Rust and Piston. Hopefully there will be more time to create more tutorials, but for now you'll have to continue your journey elsewhere:
 
 - Check out the source code: `$TUTORIAL_ROOT/sample_project/src/main.rs`
 - [Read the Rust book](http://doc.rust-lang.org/book/ "Go read it!")
