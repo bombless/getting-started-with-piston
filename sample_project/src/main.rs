@@ -11,6 +11,7 @@ use opengl_graphics::{
 };
 use sdl2_window::Sdl2Window;
 use piston::window::{Size, WindowSettings};
+use piston::event::Events;
 
 fn main() {
     let opengl = OpenGL::_3_2;
@@ -21,13 +22,17 @@ fn main() {
 
     let ref mut gl = GlGraphics::new(opengl);
     let window = RefCell::new(window);
-    for e in piston::events(Rc::new(window)) {
+    for e in Events::events(Rc::new(window)) {
         use piston::event::*;
 
         if let Some(args) = e.render_args() {
             use graphics::*;
-
-            gl.draw([0, 0, args.width as i32, args.height as i32], |c, gl| {
+            let viewport = Viewport {
+                rect: [0, 0, 300, 300],
+                draw_size: [300, 300],
+                window_size: [300, 300]
+            };
+            gl.draw(viewport, |c, gl| {
                 clear([1.0; 4], gl);
                 rectangle([1.0, 0.0, 0.0, 1.0], [0.0, 0.0, 100.0, 100.0], c.transform, gl);
             });
